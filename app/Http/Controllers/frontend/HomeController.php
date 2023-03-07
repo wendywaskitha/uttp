@@ -12,4 +12,14 @@ class HomeController extends Controller
     {
         return view ('homepage');
     }
+
+    public function layanan()
+    {
+        return view ('layanan');
+    }
+
+    public function jumlahuttp()
+    {
+        return view ('jumlahuttp');
+    }
 }

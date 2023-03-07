@@ -31,7 +31,7 @@
         </div>
       </div>
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-        <img class="object-cover object-center rounded" alt="hero" src="https://metrologi.disdag.padang.go.id/up/konten/09122019122246metrologi.jpg">
+        <img class="object-cover object-center rounded" alt="hero" src="{{ asset('images/bg-1.png') }}">
       </div>
     </div>
   </section>
@@ -39,7 +39,7 @@
   <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-10">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Informasi Metrologi Legal</h1>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 underline underline-offset-8">Informasi Metrologi Legal</h1>
       </div>
       <div class="flex flex-wrap">
         <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
@@ -63,7 +63,7 @@
         <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
           <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Layanan</h2>
           <p class="leading-relaxed text-base mb-4">Layanan Publik berbasis online untuk mempermudah masyarakat mendapatkan layanan Kemetrologian.</p>
-          <a class="text-red-500 inline-flex items-center">Selengkapnya
+          <a href="{{ url('/layanan') }}" class="text-red-500 inline-flex items-center">Selengkapnya
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
@@ -82,79 +82,11 @@
     </div>
   </section>
 
-  {{-- Blog --}}
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-10">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Berita Terbaru</h1>
-        </div>
-      <div class="flex flex-wrap -mx-4 -my-8">
-        <div class="py-8 px-4 lg:w-1/3">
-          <div class="h-full flex items-start">
-            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
-              <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Jul</span>
-              <span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
-            </div>
-            <div class="flex-grow pl-6">
-              <h2 class="tracking-widest text-xs title-font font-medium text-red-500 mb-1">CATEGORY</h2>
-              <h1 class="title-font text-xl font-medium text-gray-900 mb-3">The 400 Blows</h1>
-              <p class="leading-relaxed mb-5">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-              <a class="inline-flex items-center">
-                <img alt="blog" src="https://dummyimage.com/103x103" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
-                <span class="flex-grow flex flex-col pl-3">
-                  <span class="title-font font-medium text-gray-900">Alper Kamu</span>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="py-8 px-4 lg:w-1/3">
-          <div class="h-full flex items-start">
-            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
-              <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Jul</span>
-              <span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
-            </div>
-            <div class="flex-grow pl-6">
-              <h2 class="tracking-widest text-xs title-font font-medium text-red-500 mb-1">CATEGORY</h2>
-              <h1 class="title-font text-xl font-medium text-gray-900 mb-3">Shooting Stars</h1>
-              <p class="leading-relaxed mb-5">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-              <a class="inline-flex items-center">
-                <img alt="blog" src="https://dummyimage.com/102x102" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
-                <span class="flex-grow flex flex-col pl-3">
-                  <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="py-8 px-4 lg:w-1/3">
-          <div class="h-full flex items-start">
-            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
-              <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Jul</span>
-              <span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
-            </div>
-            <div class="flex-grow pl-6">
-              <h2 class="tracking-widest text-xs title-font font-medium text-red-500 mb-1">CATEGORY</h2>
-              <h1 class="title-font text-xl font-medium text-gray-900 mb-3">Neptune</h1>
-              <p class="leading-relaxed mb-5">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-              <a class="inline-flex items-center">
-                <img alt="blog" src="https://dummyimage.com/101x101" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
-                <span class="flex-grow flex flex-col pl-3">
-                  <span class="title-font font-medium text-gray-900">Henry Letham</span>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   {{-- Kontak Kami --}}
   <section class="text-gray-600 body-font relative">
     <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
       <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-        <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+        <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed/v1/place?q=Kantor+Dinas+PERINDAG+Muna+Barat&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" style="contrast(1.2) opacity(0.4);"></iframe>
         <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
           <div class="lg:w-1/2 px-6">
             <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ALAMAT</h2>
@@ -167,10 +99,10 @@
         </div>
       </div>
       <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-        <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
-        <p class="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+        <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Kontak Kami</h2>
+        <p class="leading-relaxed mb-5 text-gray-600">Silahkan isi formulir dibawah ini</p>
         <div class="relative mb-4">
-          <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+          <label for="name" class="leading-7 text-sm text-gray-600">Nama</label>
           <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
         </div>
         <div class="relative mb-4">
@@ -178,11 +110,10 @@
           <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
         </div>
         <div class="relative mb-4">
-          <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+          <label for="message" class="leading-7 text-sm text-gray-600">Pesan</label>
           <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
         </div>
-        <button class="text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Button</button>
-        <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
+        <button class="text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Kirim Pesan</button>
       </div>
     </div>
   </section>
@@ -191,7 +122,7 @@
   <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-10">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Instansi Terkait</h1>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 underline underline-offset-8">Instansi Terkait</h1>
     </div>
     <div class="flex flex-wrap -m-4">
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -199,7 +130,7 @@
           <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://adminkom.org/po-content/uploads/logo-kementerian-perdagangan-png-2.png">
         </a>
         <div class="mt-4">
-          <h2 class="text-gray-900 title-font text-lg font-medium">Kementerian Perdagangan</h2>
+          <h2 class="text-gray-900 title-font text-lg font-medium text-center">Kementerian Perdagangan</h2>
         </div>
       </div>
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -207,7 +138,7 @@
           <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://ditjenpktn.kemendag.go.id/theme/default/assets/images/repository/hero-about-us.jpg">
         </a>
         <div class="mt-4">
-          <h2 class="text-gray-900 title-font text-lg font-medium">Direktorat Metrologi</h2>
+          <h2 class="text-gray-900 title-font text-lg font-medium text-center">Direktorat Metrologi</h2>
         </div>
       </div>
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -215,7 +146,7 @@
           <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://pbs.twimg.com/profile_images/1415149779894497285/f4Zw9HCg_400x400.jpg">
         </a>
         <div class="mt-4">
-          <h2 class="text-gray-900 title-font text-lg font-medium">Balai Standarisasi Metrologi Legal Regional IV</h2>
+          <h2 class="text-gray-900 title-font text-lg font-medium text-center">Balai Standarisasi Metrologi Legal Regional IV</h2>
         </div>
       </div>
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -223,7 +154,7 @@
           <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Lambang_Kabupaten_Muna_Barat.png">
         </a>
         <div class="mt-4">
-          <h2 class="text-gray-900 title-font text-lg font-medium">Pemerintah Kabupaten Muna Barat</h2>
+          <h2 class="text-gray-900 title-font text-lg font-medium text-center">Pemerintah Kabupaten Muna Barat</h2>
       </div>
     </div>
   </div>

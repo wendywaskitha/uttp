@@ -25,7 +25,7 @@
 
         @include('layouts.partials.nav')
         
-        @yield('konten')
+        @yield('jumlahuttp')
        
         @include('layouts.partials.footer')
     </body>

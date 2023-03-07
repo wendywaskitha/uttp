@@ -19,3 +19,5 @@ use App\Http\Controllers\frontend\HomeController;
 // });
 
 Route::get('/',[HomeController::class, 'index'])->name('home');
+Route::get('/layanan',[HomeController::class, 'layanan'])->name('layanan');
+Route::get('/jumlahuttp',[HomeController::class, 'jumlahuttp'])->name('jumlahuttp');
